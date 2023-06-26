@@ -1,0 +1,30 @@
+def first_unique_char(s):
+    char_count = {}  
+
+    for i in s:
+        if i in char_count:
+            char_count[i] += 1
+        else:
+            char_count[i] = 1
+
+    for j in range(len(s)):
+        if char_count[s[j]] == 1:
+            return j
+
+    return -1  
+
+string = "leetcode"
+index = first_unique_char(string)
+print(index)
+
+string = "AMARIT"
+index = first_unique_char(string)
+print(index)
+
+string = "Pritam"
+index = first_unique_char(string)
+print(index)
+
+string = "aaabbbbcc"
+index = first_unique_char(string)
+print(index)
