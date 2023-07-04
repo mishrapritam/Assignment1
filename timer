@@ -1,0 +1,10 @@
+import time
+
+@timer
+def my_function():
+    a, b = 9,8 
+    a = a + b
+    time.sleep(2)
+    return a
+
+my_function()
