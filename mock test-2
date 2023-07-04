@@ -1,0 +1,7 @@
+def test(l):
+    l1=[]
+    for i in l:
+        if i%2 ==0 :
+            l1.append(l)
+            return l1
+            
