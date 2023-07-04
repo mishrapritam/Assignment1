@@ -1,0 +1,8 @@
+def calculate_mean(numbers):
+    if not numbers:
+        return None
+
+    total_sum = sum(numbers)
+    count = len(numbers)
+    mean = total_sum / count
+    return mean
