@@ -1,0 +1,11 @@
+from scipy import stats
+
+def perform_hypothesis_test(sample1, sample2):
+    t_statistic, p_value = stats.ttest_ind(sample1, sample2)
+    return t_statistic, p_value
+
+sample1 = [1, 2, 3, 4, 5]
+sample2 = [2, 4, 6, 8, 10]
+t_statistic, p_value = perform_hypothesis_test(sample1, sample2)
+print("T-statistic:", t_statistic)
+print("P-value:", p_value)
